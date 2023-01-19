@@ -11,13 +11,15 @@ public class GuessingGame : MonoBehaviour
 {
     // A reference to the Text object
     public TextMeshProUGUI textGameObject;
-    public TMP_InputField inputFieldGameObject;
+    public TMP_InputField inputFieldName;
+    public TMP_InputField inputFieldAge;
 
     // public - indicates Unity can refer to this function in the editor,
     // such as to trigger when a button is pressed.
     public void MyFunction()
     {
-        textGameObject.text = "Hello " + inputFieldGameObject.text + " how are you doing?";
+        textGameObject.text = "Hello " + inputFieldName.text + ", you are " 
+            + inputFieldAge.text + " years old";
 
         // Function call to print to the console.
         // Debug.Log(inputFieldGameObject.text);
