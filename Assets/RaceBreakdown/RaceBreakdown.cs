@@ -39,6 +39,17 @@ public class RaceBreakdown : MonoBehaviour
 
     private void Start()
     {
+        // Stuff for Erick, sorting collections of things.
+        //Vector3 goalLine = Vector3.zero;
+
+        //List<GameObject> losers = courseFromUnity;
+
+        //losers.Sort((a, b) =>
+        //{
+        //    return Vector3.Distance(a.transform.position, goalLine) >
+        //    Vector3.Distance(b.transform.position, goalLine) ? 1 : -1;
+        //});
+
         Debug.Log("Printing Ben's tiles.");
 
         foreach (string tile in benCourse)
