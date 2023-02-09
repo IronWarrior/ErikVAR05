@@ -37,8 +37,12 @@ public class RaceBreakdown : MonoBehaviour
 
     private int runnerA = 0;
 
+    public GameObject screen;
+
     private void Start()
     {
+        screen.SetActive(false);
+
         // Stuff for Erick, sorting collections of things.
         //Vector3 goalLine = Vector3.zero;
 
